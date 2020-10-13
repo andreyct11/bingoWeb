@@ -1,0 +1,137 @@
+body{
+    background: rgb(228, 227, 227);
+    font-family: 'Sansita Swashed', cursive;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+#tableroBingo{
+    justify-self: center;
+    grid-column: 1;
+    
+    display: grid;
+    grid-template-columns: repeat(15, 70px);
+    text-align: center;  
+    font-size: 2rem;  
+    justify-content: stretch;    
+}
+
+span{
+    padding: 7px;
+    border: solid 1px black;
+    margin: 14px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    transition: all 1s ease;
+}
+
+span:hover{
+    cursor: pointer;
+}
+.numero-extraido{
+    text-align: center;
+    margin-top: 80px;
+
+    background-image: url(../img/1.jpg);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background-size: contain;
+    font-size: 6rem;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+
+}
+.reset{
+    align-self: end;
+    font-size: 1rem;
+    display: grid;
+    width: 100px;
+    height: 100px;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    background: tomato;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.555);
+    transition: all .3s ease;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.btn-num{
+    text-align: center;
+    font-size: 2rem;
+    display: grid;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.555);
+    transition: all .3s ease;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.btn-num:hover, .reset:hover{
+    cursor: pointer;
+}
+
+.btn-num:active, .reset:active{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.555);
+    transform: scale(0.9);
+}
+
+.num-marcado{
+    background: yellowgreen;
+    color: navy;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.555);
+    transform: scale(1.2);
+}
+
+#panel{
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.btn-sorteo{
+    border: none;
+    background: rgb(243, 135, 33);
+    width: 100px;    
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.555);    
+    margin: auto;
+    text-align: center;
+}
+.num-sorteo{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.btn-borrar{
+    background: rgb(223, 35, 35);
+    width: 100px;    
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.555);    
+    margin: auto;
+    text-align: center;
+}
